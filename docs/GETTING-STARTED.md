@@ -97,9 +97,9 @@ one that answers everything confidently is the failure mode this catalog is buil
 they report to the chief executive rather than into the function they review, and **their blocking
 findings are not overrulable by the department under review.**
 
-In Claude Code, installing `security@headcount` also registers the plugin-native
-`security:security-review` agent. Use it after a producing department has created the artifact to be
-reviewed. The reviewer runs in a separate context with a read-only tool allowlist, inspects the
+In Claude Code, installing `security@headcount` also registers the plugin-native reviewer
+`@agent-security:security-review`. Use it after a producing department has created the artifact to
+be reviewed. The reviewer runs in a separate context with a read-only tool allowlist, inspects the
 underlying artifact rather than accepting the producer's summary, and returns its findings to the
 orchestrator. A blocking finding sends the work back for correction and independent re-review; the
 producer cannot clear its own finding. The only alternate closure is explicit Chief Executive risk
